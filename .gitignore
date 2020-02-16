@@ -18,6 +18,10 @@
 *.zip
 *.tar.gz
 *.rar
+# Eclipse
+.classpath
+.project
+.settings
 
 #eclipse
 .classpath
