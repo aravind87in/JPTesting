@@ -57,11 +57,6 @@ public class GetPostsSteps {
 
 		res.then().statusCode(HttpStatus.SC_OK).assertThat().body("size()", is(1));
 		Assert.assertTrue(((String) jsonPathEvaluator.get("title[0]")).equalsIgnoreCase("qui est esse"));
-		// Assert.assertTrue(((String) jsonPathEvaluator.get("body[0]")).contains("est
-		// rerum tempore vitae\r\n" +
-		// "sequi sint nihil reprehenderit dolor beatae ea dolores neque\r\n" +
-		// "fugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\r\n" +
-		// "qui aperiam non debitis possimus qui neque nisi nulla"));
 
 	}
 
